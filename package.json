@@ -1,0 +1,23 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "An Amazon-like storefront built primarily with MySQL.",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Komorebi-Girl/Bamazon.git"
+  },
+  "author": "Stacy JP",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Komorebi-Girl/Bamazon/issues"
+  },
+  "homepage": "https://github.com/Komorebi-Girl/Bamazon#readme",
+  "dependencies": {
+    "inquirer": "^5.0.0",
+    "mysql": "^2.15.0"
+  }
+}
