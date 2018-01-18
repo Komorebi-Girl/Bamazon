@@ -45,7 +45,6 @@ function checkInventory () {
   ])
   .then(function(answer) {
 	  	console.log("These items are available for sale.")
-	  	queryAllProducts();
 	  	readData(answer.productID, answer.units);
 
   });
@@ -93,17 +92,20 @@ function updateProduct(ID, units, quantity) {
 function queryAllProducts() {
   connection.query("SELECT * FROM products", function(err, res) {
     if (err) throw err;
+     console.log("Here are the items available for purchase.");
   	for (var i = 0; i < res.length; i++) {
   		console.log(
+
   			`Item ID: ${res[i].item_id} 
   			Product Name: ${res[i].product_name} 
   			Department Name: ${res[i].department_name} 
   			Price: ${res[i].price} 
   			Amount in Stock: ${res[i].stock_quantity}`)
+      console.log("-------------------------------------------------------");
   	}
   });
 }
 
-
-checkInventory();
+queryAllProducts();
+var check = setTimeout(checkInventory,3000);
 
