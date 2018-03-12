@@ -1,6 +1,8 @@
 # Bamazon
 Bamazon is a basic Node Application that works along with MySQL to simulate an Amazon storefront. The user can find out which items are for sale and read through important product details like the item's price, amount currently in stock and the department the item is listed in. In addition to reading through product info, the user can search for and purchase particular items through using the relevant product ID. 
 
+To get a sense of how one uses Bamazon, please download and watch my demo video. It's only 90 seconds! 
+
 ## Getting Started
 As there is a Package.JSON included in the repo, the user should only need to copy/clone the repo, do a npm install and run the bamazonCustomer.js file. 
 
